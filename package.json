@@ -5,7 +5,6 @@
   "main": "bot.js",
   "dependencies": {
     "discord.js": "^11.3.2",
-    "erlpack": "github:hammerandchisel/erlpack#master",
     "node-opus": "^0.2.4",
     "uws": "^0.12.0"
   },
