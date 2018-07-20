@@ -1,0 +1,32 @@
+{
+  "name": "selfbot",
+  "version": "1.2.3",
+  "description": "An evaluating discord bot",
+  "main": "bot.js",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "erlpack": "github:hammerandchisel/erlpack#master",
+    "node-opus": "^0.2.4",
+    "uws": "^0.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dillman33/EvalBot.git"
+  },
+  "keywords": [
+    "Discord.js",
+    "nodejs",
+    "eval",
+    "discord"
+  ],
+  "author": "Funnbot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dillman33/EvalBot/issues"
+  },
+  "homepage": "https://github.com/dillman33/EvalBot#readme"
+}
