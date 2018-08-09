@@ -4,7 +4,7 @@ const auth = require('./settings.js');
 
 bot.on('message', (message) => {
 //    if (message.author.id !== bot.user.id) return;
-    if (!message.content.startsWith(auth.prefix)) return;
+    if (!message.content.toString().toLowerCase().startsWith(auth.prefix)) return;
     let command = message.content.slice(auth.prefix.length);
     let split = command.split(" ");
     command = split[0];
@@ -12,6 +12,7 @@ bot.on('message', (message) => {
     let code = split.join(" ");
 //    if (command === "eval") {
         try {
+//            console.log();
         let ev = require('util').inspect(eval(code));
         if (ev.length > 1950) {
             ev = ev.substr(0, 1950);
@@ -27,7 +28,8 @@ bot.on('message', (message) => {
 })
 
 bot.on('ready', () => {
-    console.log("Ready To Eval")
+    console.log("Ready To Eval");
+    bot.user.setActivity("Type ev code!");
 })
 
 bot.login(auth.token)
